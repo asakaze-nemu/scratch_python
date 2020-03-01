@@ -18,7 +18,7 @@ def setPyramid(mc=mc, x=0, z=0, size=3, y=0, blockTypeId=41, blockData=0):
 
 def woolRainbow(mc=mc, x=0, z=0, size=7, n=64):
     for i in range(n):
-        setPyramid(x=x, z=z, size=size, blockTypeId=35, blockData=(i % 16))
+        setPyramid(x=x, z=z, size=size, blockTypeId=35, blockData=(i % 11))
         sleep(0.25)
 
 
@@ -30,6 +30,6 @@ clearField()
 sleep(1)
 setPyramid(x=0, z=0, size=21, blockTypeId=41, blockData=0)
 sleep(2)
-setPyramid(x=15, z=15, size=15, blockTypeId=42, blockData=0)
+setPyramid(x=15, z=15, size=15, blockTypeId=28, blockData=0)
 sleep(2)
-woolRainbow(x=0, z=20, size=11, n=32)
+woolRainbow(x=0, z=5, size=25, n=32)
